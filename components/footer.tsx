@@ -1,5 +1,5 @@
 import Container from './container';
-import { Constants } from '../lib/constants';
+import { CONSTANTS } from '../lib/constants';
 
 export default function Footer() {
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
               Read Documentation
             </a>
             <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${Constants.EXAMPLE_PATH}`}
+              href={`https://github.com/vercel/next.js/tree/canary/examples/${CONSTANTS.EXAMPLE_PATH}`}
               className="mx-3 font-bold hover:underline"
             >
               View on GitHub

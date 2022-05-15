@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@mui/material/Link';
 
-import { Constants } from 'lib/constants';
+import { CONSTANTS } from 'lib/constants';
 
 export type Props = {
   totalCount: number;
@@ -13,7 +13,7 @@ export default function Paging(props: Props) {
   const { totalCount } = props;
   return (
     <ul className="list-none flex justify-center">
-      {range(1, Math.ceil(totalCount / Constants.PER_PAGE)).map(
+      {range(1, Math.ceil(totalCount / CONSTANTS.PER_PAGE)).map(
         (number, index) => (
           <li className="m-2" key={index}>
             <div className="rounded border border-black-500 border-solid">
